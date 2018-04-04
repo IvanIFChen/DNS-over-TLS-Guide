@@ -29,6 +29,10 @@ Start the Stubby daemon and that's it!
 sudo brew services start stubby
 ```
 
+## Result
+You can see that all out going traffic to 1.1.1.1 are now encrypted
+<img src="result.png"/>
+
 ## To revert changes
 Settings -> Network -> Advanced... -> DNS -> DNS Servers, click on `-` then 
 ```
