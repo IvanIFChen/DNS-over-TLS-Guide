@@ -50,7 +50,7 @@ Then do:
 ```
 brew unlink stubby && brew link stubby
 ```
-Thanks [Jason](https://github.com/WanderingBrooks) for figuring it out.
+(Thanks [Jason](https://github.com/WanderingBrooks) for figuring it out)
 
 ### Source
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
