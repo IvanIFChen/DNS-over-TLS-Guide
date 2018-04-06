@@ -33,11 +33,24 @@ sudo brew services start stubby
 You can see that all out going traffic to 1.1.1.1 are now encrypted
 <img src="result.png"/>
 
-## To revert changes
+## To go back
 Settings -> Network -> Advanced... -> DNS -> DNS Servers, click on `-` then 
 ```
 sudo brew services stop stubby
 ```
+
+## Gotchas
+You might have some folder permission issues while installing Stubby on High Sierra. Try the following
+```
+sudo chown -R whoami:admin PATH_TO_DIRECTORY_IT_CAN'T_SYMLINK
+```
+e.g. `sudo chown -R whoami:admin /usr/local/share`
+
+Then do:
+```
+brew unlink stubby && brew link stubby
+```
+Thanks [Jason](https://github.com/WanderingBrooks) for figuring it out.
 
 ### Source
 https://dnsprivacy.org/wiki/pages/viewpage.action?pageId=3145812
